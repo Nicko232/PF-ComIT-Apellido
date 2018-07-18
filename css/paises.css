@@ -1,0 +1,150 @@
+@import url(sociales.css);
+@import url(bootstrap.min.css);
+@import url(mdb.min.css);
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+.espacio {
+	width: 100%;
+	color: white;
+	font-size: 30px;
+	background: black;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;	
+}
+
+#container .box {
+	margin:20px 10px 10px 10px;
+}
+
+
+.box {
+	display: inline-block;	
+	flex-wrap: wrap;
+	cursor: pointer;
+	transform: translate(0%,0%);
+	width:100%;
+	max-width: 300px;
+	height: 290px;
+	background: #2b313e;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+	overflow: hidden;
+}
+
+.box:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg,
+		                        #000 15%,
+		                        #000 30%,
+		                        transparent 25%,
+		                        transparent 50%,
+		                        #000 50%,
+			                	#000 80%,
+			                	transparent 75%,
+			                	transparent 100%);
+	background-size: 200px;
+	transition: 0.5s;
+	z-index: 2;
+}
+
+.box:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg,
+			                	transparent 0%,
+			                	transparent 25%,
+			                	#000 25%,
+			                	#000 50%,
+			                	transparent 50%,
+			                	transparent 75%,
+			                	#000 75%,
+			                	#000 100%);
+	background-size: 200px;
+	transition: 0.5s;
+	z-index: 2;
+}
+
+.box:hover:before {
+	left: -100%;
+}
+
+.box:hover:after {
+	left: 100%;
+}
+
+.box .content {	
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	bottom: 5px;
+	background: #fff;
+	z-index: 1;
+	padding: 1;
+	text-align: center;
+	border-radius: 6px; 
+}
+
+.box .content p {
+	font-size: 21px;
+}
+
+.box .details {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	z-index: 3;
+	text-align: center;
+	transition: 0.5s;
+	transition-delay: 0.5s;
+}
+
+.box .details .image {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 4px solid  #fff;
+	box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+	margin: 0 auto;
+}
+
+.box .details .image img {
+	width: 100%;	
+}
+
+.box .details h3 {
+	margin: 20px 0 0;
+	padding: 0;
+	color: #fff;
+	font-size: 24px;
+}
+
+.box .details h3 span {
+	font-size: 20px;
+}
+
+.box:hover .details {
+	opacity: 0;
+	transition-delay: 0s; 
+}
+

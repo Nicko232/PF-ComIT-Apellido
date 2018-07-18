@@ -1,0 +1,49 @@
+@import url(texto.css);
+
+.logo img {
+	margin-top: 1.4em;
+	padding: 0;
+	border: 0;
+	max-width: 100%;
+	margin-top: 5%;
+	display: flex;	
+}
+
+#banderas .contenedor article a {
+	text-decoration: none;
+}
+
+#banderas h4 {
+	text-align: center;
+	color: white;
+	font-size: 1em;
+}
+
+#banderas .contenedor {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	cursor: pointer;
+	/*display:flex para que la imagen y las letras esten unidas una debajo de la otra
+	justify-content:center es para que se alinien mas al centro sino quedan muy pegadas al lado izquierdo
+	flex-wrap:wrap para que cuando  no entren en la pantalla una baje*/
+}
+
+#banderas article {
+	margin: 0.8vw;
+	/*espacios para cada imagen y letras*/
+}
+
+#banderas img {
+	width: 250px;
+	height: 160px;
+	background-size: contain;
+	/*width:300px ancho de las imagenes
+	height:200px; altura
+	background-size: contain; para que todas tengan la misma proporcion  */
+}
+
+#banderas img {
+	display: flex;
+}
+

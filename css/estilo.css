@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('fontello.css');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto Slab', serif;
+	background: rgb(170,0,0);
+}
+
+header {
+	width: 100%;
+	height: 50px;
+	background: rgb(120,0,0);
+	color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+.logo img {
+	margin-top: 1.4em;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	margin-top: 5%;
+	display: flex;
+}
+
+.contenedor {
+	width: 98%;
+	margin: auto;
+}
+
+
+header .contenedor {
+	display: table;
+
+}
+
+section {
+	width: 100%;
+	
+}
+
+#menu-bar {
+	display: none;
+}
+
+
+header label {
+	float: right;
+	font-size: 28px;
+	margin: 6px 0;
+	cursor: pointer;
+}
+
+.menu {
+	position: fixed;
+	z-index: 100;	
+	top: 50px;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(120,0,0,0.9);
+	transition: all 0.5s;
+	transform: translateX(-100%);
+}
+
+.menu a, .dos a {
+	display: block;
+	color: #fff;
+	height: 50px;
+	text-decoration: none;
+	padding: 15px;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.dos{
+	position: absolute;
+	top: 0px;
+	float: left;
+	display: flex;
+	
+}
+
+.dos a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 15px;
+}
+
+.menu a:hover {
+	background: rgba(255,255,255,0.3);
+}
+
+.dos a:hover{
+	background: green;
+}
+
+footer {
+	width: 100%;
+	background: rgb(120,0,0);
+	color: #fff;
+	clear: both;
+	text-align: center;
+	padding: 0.3em;
+	font-size: 1.5em;
+	/*background: black; fondo negro
+	color: #fff; letra blanca
+	clear: both; limpiar no se que limpie xD ajjaja
+	text-align: center; centrar texo
+	padding: 10px; caja aumenta 10px*/
+}
+
+
+#menu-bar:checked ~ .menu {
+	transform: translateX(0%);
+}								
+
+@media (min-width:1000px) {
+	.menu {
+		display: flex;
+		width: auto;
+		height: auto;
+		transform: translateX(0%);
+		position: static;
+		float: left;			
+	}
+	.menu a, #dos a {
+		border: none;
+	}
+	.dos {
+		display: flex;
+		width: auto;
+		height: auto;
+		transform: translateX(0%);
+		position: static;
+		float: right;
+	}
+	
+	header label {
+		display: none;
+	}
+}
+
+.saludo1 .usuario { 	
+	float: right;
+	font-size: 20px;
+	margin-top: 13px;
+	margin-left: 10px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.saludo1 :hover {
+	color: #ffbf00;
+	transition: 3s;
+}
+
+.saludo .salida a {	
+	float: right;
+	margin-top: 12px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.saludo .salida a:hover {
+	color: red;
+	transition: 2s;
+}

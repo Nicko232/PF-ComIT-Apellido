@@ -1,0 +1,43 @@
+@import url(estilo.css);
+
+body {
+	background: rgb(170,0,0);
+	color: white;	
+}
+
+form {
+	background: white;
+	border-radius: 7%;	
+}
+
+h2 {
+	width: 100%;
+	background: #006dce;
+}
+
+.saludo1 .usuario {	
+	float: right;
+	font-size: 20px;
+	margin-top: 8px;
+	margin-left: 10px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.saludo1 :hover {
+	color: #ffbf00;
+	transition: 3s;
+}
+
+.saludo .salida a {	
+	float: right;
+	margin-top: 5px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.saludo .salida a:hover {
+	color: red;
+	transition: 2s;
+}

@@ -1,0 +1,64 @@
+@import url(../../css/estilo.css);
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body {
+	background: rgba(0,101,179,1);
+}
+.primera img {
+	width: 100%;
+	margin-top: 45px;
+}
+h4 {
+	background: rgba(0,101,179,1);
+	color: #fff;
+	text-align: center;
+
+}
+
+.info p, h3 {
+	color: #fff;
+}
+.info img {
+	margin-top: 45px;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+	margin-bottom: 20px;
+}
+
+.info .p1 {
+	font-size: 2em;
+	margin-left: 80px;
+}
+
+.saludo1 .usuario{  
+     float: right;
+     font-size: 20px;
+     margin-top: 8px;
+     margin-left: 10px;
+     margin-right: 20px;
+     cursor: pointer;
+     background: rgba(120,0,0,0.9);
+}
+
+.saludo1 :hover{
+     color: #ffbf00;
+     transition: 3s;
+}
+
+.saludo .salida a { 
+    float: right;
+    margin-top: 5px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.saludo .salida a:hover {
+     color: red;
+     transition: 2s;
+}

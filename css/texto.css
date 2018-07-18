@@ -1,0 +1,42 @@
+.main article {
+	width: 100%;
+	background: #00008b;
+	color: #fff382;
+	border-style: dotted;
+	font-size: 2.4vw;
+	text-align: center;
+	/* width:100%; que ocupe toda la pantalla
+	background: #00008b; color del menu
+	color: #fff382; color de las letras del menu
+	border-style: dotted; punteros en el borde*/
+}
+
+h1 {
+	text-align: center;
+	font-size: 3.8vw;
+	
+	/*centrar texto en este caso titulo
+	font-size: 20px; aumenta el tamaño de las letras */	
+}
+
+aside {
+	width: 100%;	
+	background: black;
+	color: white;
+	text-align: center;
+	border-style: double;
+	font-size: 3vw;
+	clear: both;
+	/*width: 100%; ocupa 100% de la pantalla	
+	background: blue color de la caja;
+	color: white; letra blanca
+	border-style: double; un cuadro con doble line
+	font-size:30px; la letra obviamente xD*/
+}
+
+.comentarios {	
+	width: 100%;
+	height: 500px;
+	margin-bottom: 20px;
+	color: white;
+}

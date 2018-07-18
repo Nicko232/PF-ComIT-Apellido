@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+	color: #D5C500;
+	border: double blue;
+	background: black;
+	width: 100%;
+	font-size: 5vw;
+}
+
+.grupos {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+article p {
+	width: 240px;
+}
+
+h2 {
+ 	color: #D5C500;
+ 	background: black;
+}
+
+.grupos .A, .B, .C, .D, .E, .F, .G, .H{
+	font-size: 2em;
+	background: green;
+	color: white;
+	border:solid black 5px;
+	border-radius: 7%;
+	padding: 0px;
+	margin: 20px;	
+}
+
+.final img {
+	width: 100%;
+	border: solid 6px black;
+	border-radius: 3%;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.8);	
+}
