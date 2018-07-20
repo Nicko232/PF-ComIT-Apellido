@@ -48,7 +48,7 @@ if (session_id() === "") { session_start(); }
 			<li><a href="slider/mejores.php">
 					<img src="slider/imgprin/mejores.jpg" alt="">
 					<section class="flex-caption">
-						<p>Quién sera el mejor</p>
+						<p>¿Quién será el mejor?</p>
 					</section>
 				</a>
 			</li>
